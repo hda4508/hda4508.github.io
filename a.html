@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-color: #fae1e1;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            padding: 1.2rem;
+            color: black;
+        }
+
+        header>p img {
+            width: 50%; 
+            position: relative; 
+            top: 10px; 
+            left: 20px;
+        }
+
+        header>ul {
+            display: flex;
+            font-size: 20px;
+            gap: 20px;
+            align-items: center;
+        }
+
+        li:link a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        li:hover a {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        li:active a {
+            color: #4e0000;
+        }
+
+        header>ul>li {
+            list-style-type: none;
+            margin-left: 1.7rem;
+        }
+
+        header>ul>li>a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+
+        table, tr, td, th {
+            border: none;
+            padding: 10px;
+            text-align: center;
+            margin: 50px;
+            font-weight: bold;
+        }
+
+        .jelly {
+            border: 1px solid gray;
+            border-radius: 10px;
+            background-color: rgb(255, 207, 207);
+            margin-top: 20px;
+        }
+
+        .text {
+            border: none;
+            width: 500px;
+            font-size: 16px;
+            margin: 40px;
+            margin-left: 50px;
+            font-family: sans-serif;
+        }
+
+        .highlight {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .highlight-1 {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Noto Sans KR', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>
+                <a href="index.html"><img src="img/Asset 1.png" width="10px"></a>
+            </p>
+            <ul>
+                <li>
+                    <a href="a.html">bärchen pärchen</a>
+                </li>
+                <li>
+                    <a href="b.html">Charakter</a>
+                </li>
+                <li>
+                    <a href="c.html">Die Art</a>
+                </li>
+                <li>
+                    <a href="d.html">Mischung</a>
+                </li>
+                <li>
+                    <a href="e.html">Geschmack</a>
+                </li>
+            </ul>
+        </header>
+        <section>
+        </section>
+        
+        <table>
+            <tr>
+                <td>
+                    <div class="jelly"><img src="img/app.png" width="200px"></div>
+                    <span class="highlight">apple</span>
+                </td>
+                <td>
+                    <div class="jelly"><img src="img/or.png" width="200px"></div>
+                    <span class="highlight">orange</span>
+                </td>
+                <td rowspan="3">
+                    <div class="text">
+                        <span class="highlight-1">bärchen pärchen</span><br><br>
+                        달콤함과 신맛은 커플입니다! 세 쌍의 커플이라서 맛이 다양합니다. 
+                        곰 커플로서 새콤한 레몬과 달콤한 체리, 새콤한 주스 오렌지와 달콤한 사과, 새콤한 커런트와 달콤한 블루베리가 서로를 찾아 만났습니다. 
+                        <br><br>거의 분리불가!
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="jelly"><img src="img/l.png" width="200px"></div>
+                    <span class="highlight">lemon</span>
+                </td>
+                <td>
+                    <div class="jelly"><img src="img/b.png" width="200px"></div>
+                    <span class="highlight">blackcurrant</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="jelly"><img src="img/bb.png" width="200px"></div>
+                    <span class="highlight">blueberry</span>
+                </td>
+                <td>
+                    <div class="jelly"><img src="img/c.png" width="200px"></div>
+                    <span class="highlight">cherry</span>
+                </td>
+            </tr>
+        </table>    
+    </div>
+</body>
+</html>

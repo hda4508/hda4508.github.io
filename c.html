@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { 
+            padding: 0;
+            margin: 0;  
+        }
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            padding: 1.2rem;
+            color: black;
+        }
+
+        header > p img {
+            width: 50%; 
+            position: relative; 
+            top: 10px; 
+            left: 20px;
+        }
+
+        header > ul {
+            display: flex;
+            font-size: 20px;
+            gap: 20px;
+            align-items: center;
+        }
+
+        li:link a {
+            color: #000000;
+            text-decoration: none;
+        }
+    
+        li:hover a {
+            color: #ff0000;
+            font-weight: bold;
+        }
+        li:active a {
+            color: #4e0000;
+        }
+
+        header > ul > li {
+            list-style-type: none;
+            margin-left: 1.7rem;
+        }
+
+        header > ul > li > a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+
+        body {
+            background-color: #fae1e1;
+        }
+
+        table {
+            width: 100%; 
+            height: 600px;
+            border-collapse: collapse; 
+            table-layout: fixed;
+        }
+
+        td {
+            padding: 30px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            height: 250px; 
+        }
+
+        .content {
+            display: flex;
+            align-items: center; 
+            text-align: left; 
+        }
+
+        .jelly {
+            border: 1px solid gray;
+            border-radius: 10px;
+            background-color: rgb(255, 207, 207);
+            height: 220px; 
+            width: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px; 
+        }
+
+        .jelly-img {
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: contain;
+        }
+
+        .text {
+            max-width: 350px; 
+            font-size: 16px; 
+            line-height: 1.8; 
+        }
+
+        .highlight {
+            font-size: 16px;
+            font-weight: bold;
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>
+                <a href="index.html"><img src="img/Asset 1.png" width="10px"></a>
+            </p>
+            <ul>
+                <li><a href="a.html">bärchen pärchen</a></li>
+                <li><a href="b.html">Charakter</a></li>
+                <li><a href="c.html">Die Art</a></li>
+                <li><a href="d.html">Mischung</a></li>
+                <li><a href="e.html">Geschmack</a></li>
+            </ul>
+        </header>
+        
+        <table>
+            <tr>
+                <td>
+                    <div class="content">
+                        <div class="jelly">
+                            <img src="img/h1.webp" class="jelly-img" alt="이미지 1">
+                        </div>
+                        <div class="text">
+                            <span class="highlight">Goldbären</span><br><br>
+                            달콤 깜찍한 골드베렌!<br>
+                            누구에게나 친숙한 곰 모양 젤리.<br>
+                            파인애플에서부터 레몬 맛까지 여섯 가지 알록달록한 골드베렌에는 공유하고 싶은 맛있는 즐거움이 담겨 있습니다.
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="content">
+                        <div class="jelly">
+                            <img src="img/h2.webp" class="jelly-img" alt="이미지 2">
+                        </div>
+                        <div class="text">
+                            <span class="highlight">Starmix</span><br><br>
+                            다채로운 하리보 우주를 향해 맛있는 탐험<br>
+                            마시멜로우 하트에서부터 과일젤리 우정 반지와 전설적인 골드베렌까지. 은하계의 다양한 맛, 온 가족과 함께하세요.
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="content">
+                        <div class="jelly">
+                            <img src="img/h3.webp" class="jelly-img" alt="이미지 3">
+                        </div>
+                        <div class="text">
+                            <span class="highlight">Happy-Cola</span><br><br>
+                            하리보의 진정한 클래식 제품<br>
+                            1965년부터 시작된 모험가를 위한 오리지널!
+                            클래식 콜라 맛을 그대로 담은 깜직하고 귀여운 콜라병 모양 젤리.
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="content">
+                        <div class="jelly">
+                            <img src="img/h4.webp" class="jelly-img" alt="이미지 4">
+                        </div>
+                        <div class="text">
+                            <span class="highlight">Worms</span><br><br>
+                            하나로 두 가지 맛을 즐길 수 있어!<br>
+                            딸기-파인애플, 오렌지-살구 또는 라즈베리-레몬, 어떤 맛이든 모든 젤리가 끝없이 들어가요.
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="content">
+                        <div class="jelly">
+                            <img src="img/h5.webp" class="jelly-img" alt="이미지 5">
+                        </div>
+                        <div class="text">
+                            <span class="highlight">Fruity Bussi</span><br><br>
+                            부드러운 마시멜로우에 상큼한 과일 젤리<br>
+                            사랑스러운 달콤함을 전합니다! 망고, 라즈베리, 오렌지, 복숭아 그리고 살구 맛의 과즙 쪽쪽!<br>
+                            상큼한 Fruity-Bussi를 즐겨보세요!
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="content">
+                        <div class="jelly">
+                            <img src="img/h6.webp" class="jelly-img" alt="이미지 6">
+                        </div>
+                        <div class="text">
+                            <span class="highlight">Worms Zourr</span><br><br>
+                            신맛이 한 가득한 과일젤리<br>
+                            지렁이 모양의 젤리는 다채로운 맛과 색상으로 독특하고 짜릿한 신맛의 세계로 여러분을 안내해 드립니다.<br>
+                            아이 너무 셔!
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="content">
+                        <div class="jelly">
+                            <img src="img/h7.webp" class="jelly-img" alt="이미지 7">
+                        </div>
+                        <div class="text">
+                            <span class="highlight">Happy Cola Zourr</span><br><br>
+                            조금 색다른 것을 원하시나요?<br>
+                            콜라병에 레몬 한 방울을 뿌리면 HARIBO Happy Cola Zourr로 최고의 상큼함을 느낄 수 있습니다. <br>
+                            톡 쏘는 기분 좋은 식감을 병째로 즐겨보세요. 상큼한 당신을 위해 건배해요!
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="content">
+                        <div class="jelly">
+                            <img src="img/h8.webp" class="jelly-img" alt="이미지 8">
+                        </div>
+                        <div class="text">
+                            <span class="highlight">Happy Grapes</span><br><br>
+                            포도라고 다 똑같은 포도는 아니죠.<br>
+                            잘 익은 포도의 달콤함, 새콤달콤 맛과 향, 청포도의 상큼함! <br>
+                            세 가지 포도 맛이 담겨 있습니다. 어떤 포도를 먼저 맛볼까요?
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

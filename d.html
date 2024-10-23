@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+           
+        }
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            padding: 1.2rem;
+            color: black;
+        }
+
+        header>p img {
+    width: 50%; 
+    position: relative; 
+    top: 10px; 
+    left: 20px;
+        }
+
+        header>ul {
+            display: flex;
+            font-size: 20px;
+            gap: 20px;
+            align-items: center;
+        }
+
+        li:link a {
+            color: #000000;
+            text-decoration: none;
+        }
+    
+        li:hover a {
+            color: #ff0000;
+            font-weight: bold;
+        }
+        li:active a {
+            color: #4e0000;
+        }
+
+        header>ul>li {
+            list-style-type: none;
+            margin-left: 1.7rem;
+        }
+
+        header>ul>li>a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+        body {
+            background-color: #fae1e1;
+        }
+        table {
+    width: 100%; 
+    height: 600px;
+    border-collapse: collapse; 
+    table-layout: fixed;
+}
+
+td, th {
+    border: none; 
+    padding: 10px; 
+    text-align: center; 
+    width: 200px; 
+    height: 200px; 
+    font-weight: bold; 
+}
+
+tr {
+    height: 200px; 
+}
+img {
+    width: 50%; 
+    height: auto; 
+    
+}
+
+        .jelly {
+            border: 1px solid gray;
+            border-radius: 10px;
+            background-color: rgb(255, 207, 207);
+            margin-top: 30px;
+            height: 400px;
+        }
+        .jelly img {
+    width: 100%; 
+    height: auto; 
+    max-width: 200px; 
+    max-height: 300px; 
+}
+        .text {
+            border: none;
+            align-content: center;
+            width: 500px;
+            font-size: 16px;
+            margin: 40px;
+            margin-left: 50px;
+            font-family: sans-serif;
+        }
+
+        .highlight {
+            font-size: 16px;
+            font-weight: bold;
+            color: #f39c12;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>
+                <a href="index.html"><img src="img/Asset 1.png" width="10px"></a>
+            </p>
+            <ul>
+                <li>
+                    <a href="a.html">bärchen pärchen</a>
+                </li>
+                <li>
+                    <a href="b.html">Charakter</a>
+                </li>
+                <li>
+                    <a href="c.html">Die Art</a>
+                </li>
+                <li>
+                    <a href="d.html">Mischung</a>
+                </li>
+                <li>
+                    <a href="e.html">Geschmack</a>
+                </li>
+            </ul>
+        </header>
+        
+       
+            <table>
+            <tr>
+                <td><img src="img/l.png"><img src="img/or.png" width="300" height="200"></td>
+                <td id="ww"><br><br>
+                    <span class="highlight">lerange<br></span>
+                    <br>레몬 맛과 오렌지 맛의 조합!
+                    <br>상큼함이 두 배가 되는 조합을 추천합니다.
+                </td>
+            </tr>
+            </table>
+            <table>
+                <tr>
+                    <td id="ww"><br><br>
+                        <span class="highlight">Cherryple<br></span>
+                        <br>달콤한 체리와 사과의 만남!
+                        <br>행복이 두 배가 될 거예요. 한 번 먹어보세요~
+                        <td><img src="img/app.png" width="300" height="200"><img src="img/c.png"></td>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><img src="img/bb.png" width="300" height="200"><img src="img/b.png" width="300" height="200"></td>
+                    <td id="ww"><br><br>
+                        <span class="highlight">blahblah<br></span>
+                        <br>블랙커런트와 블루베리의 만남!
+                        <br>상큼하고 달달한 조합이 당신의 입을 즐겁게 해 줄 거예요.
+                    </td>
+                </tr>
+                </table>
+          
+</body>
+</html>

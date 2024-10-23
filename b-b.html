@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { 
+            padding: 0;
+            margin: 0;  
+        }
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            height: 105vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            padding: 1.2rem;
+            color: black;
+            position: relative; 
+    z-index: 10; 
+        }
+
+        header > p img {
+            width: 50%; 
+            position: relative; 
+            top: 10px; 
+            left: 20px;
+        }
+
+        header > ul {
+            display: flex;
+            font-size: 20px;
+            gap: 20px;
+            align-items: center;
+        }
+
+        li:link a {
+            color: #000000;
+            text-decoration: none;
+        }
+    
+        li:hover a {
+            color: #ff0000;
+            font-weight: bold;
+        }
+        li:active a {
+            color: #4e0000;
+        }
+
+        header > ul > li {
+            list-style-type: none;
+            margin-left: 1.7rem;
+        }
+
+        header > ul > li > a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+
+        body {
+            background-color: #fae1e1;
+        }
+
+        table {
+            width: 100%;
+            height: 600px;
+            border-collapse: collapse; 
+            table-layout: fixed;
+        }
+
+        td {
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            height: 250px; 
+        }
+
+        .content {
+    display: flex;
+    align-items: center; 
+    text-align: left;
+    position: relative; 
+}
+
+        .jelly {
+            border: 1px solid gray;
+            border-radius: 10px;
+            background-color: rgb(255, 207, 207);
+            height: 500px; 
+            width: 500px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px; 
+            margin-top: 200px;
+        }
+
+        .jelly-img {
+            max-width: 500px;
+            max-height: 500px;
+            object-fit: contain;
+        }
+
+        .text {
+            max-width: 500px; 
+            font-size: 16px; 
+            line-height: 1.8; 
+            margin: 0;
+            margin-top: 190px;
+        }
+
+        .highlight {
+            font-size: 25px;
+            font-weight: bold;
+            color: #f39c12;
+        }
+        .highlight-1 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>
+                <a href="index.html"><img src="img/Asset 1.png" width="10px"></a>
+            </p>
+            <ul>
+                <li>
+                    <a href="a.html">bärchen pärchen</a>
+                </li>
+                <li>
+                    <a href="b.html">Charakter</a>
+                </li>
+                <li>
+                    <a href="c.html">Die Art</a>
+                </li>
+                <li>
+                    <a href="d.html">Mischung</a>
+                </li>
+                <li>
+                    <a href="e.html">Geschmack</a>
+                </li>
+            </ul>
+        </header>
+        <table>
+            <tr>
+                <td>
+                    <div class="content">
+                        <div class="jelly">
+                            <img src="img/ora.png" class="jelly-img" alt="이미지 2">
+                        </div>
+                        <div class="text">
+                            <span class="highlight">쥬시곰 (Juicybear)</span><br><br>
+                            쥬시곰은 상큼한 오렌지 모양의 곰 젤리로, 항상 밝고 활기찬 성격을 가진 친구입니다. 주황색의 부드러운 몸체와 반짝이는 눈빛을 지니고 있으며, 오렌지의 달콤하고 신선한 맛을 가지고 있습니다. 쥬시곰은 과일 파티를 열고 친구들과 함께 신나는 시간을 보내는 것을 좋아해요.<br><br>
+                            쥬시곰의 가장 큰 특징은 사랑스러운 둥근 귀와 통통한 몸매입니다. 그 색깔은 상큼한 오렌지색으로, 보는 이에게 에너지를 주는 따뜻한 느낌을 전해줍니다. 쥬시곰은 언제나 긍정적이고, 주변 친구들에게 웃음을 주는 것을 목표로 합니다.<br><br>
+
+                            <span class="highlight-1">취미</span> <br>
+                            - 주스 만들기 <br>
+                            - 요리하기<br>
+                            - 산책 <br>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

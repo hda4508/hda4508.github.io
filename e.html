@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            
+        }
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            height: 105vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            padding: 1.2rem;
+            color: black;
+        }
+
+        header>p img {
+            width: 50%; 
+            position: relative; 
+            top: 10px; 
+            left: 20px;
+        }
+
+        header>ul {
+            display: flex;
+            font-size: 20px;
+            gap: 20px;
+            align-items: center;
+        }
+
+        li:link a {
+            color: #000000;
+            text-decoration: none;
+        }
+    
+        li:hover a {
+            color: #ff0000;
+            font-weight: bold;
+        }
+        li:active a {
+            color: #4e0000;
+        }
+
+        header>ul>li {
+            list-style-type: none;
+            margin-left: 1.7rem;
+        }
+
+        header>ul>li>a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+        body {
+            background-color: #fae1e1;
+        }
+        table {
+            width: 100%; 
+            height: 100%;
+            border-collapse: collapse; 
+            table-layout: fixed;
+        }
+
+        td, th {
+            border: none; 
+            padding: 10px; 
+            text-align: center; 
+            width: 200px; 
+            height: 200px; 
+            font-weight: bold; 
+        }
+
+        tr {
+            height: 200px; 
+        }
+
+        img {
+            width: 100%; 
+            height: auto;
+            max-width: 200px; 
+            max-height: 300px; 
+        }
+
+        .jelly {
+            border: 1px solid gray;
+            border-radius: 10px;
+            background-color: rgb(255, 207, 207);
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-below {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>
+                <a href="index.html"><img src="img/Asset 1.png" width="10px"></a>
+            </p>
+            <ul>
+                <li>
+                    <a href="a.html">bärchen pärchen</a>
+                </li>
+                <li>
+                    <a href="b.html">Charakter</a>
+                </li>
+                <li>
+                    <a href="c.html">Die Art</a>
+                </li>
+                <li>
+                    <a href="d.html">Mischung</a>
+                </li>
+                <li>
+                    <a href="e.html">Geschmack</a>
+                </li>
+            </ul>
+        </header>
+        
+        <table>
+            <tr>
+                <td>
+                    <div class="jelly">
+                        <img src="img/e.png" alt="apple">
+                    </div>
+                    <div class="text-below">젤리 사워게코</div>
+                    <div class="description">쫄깃하고 새콤달콤한 맛이 특징!</div>
+                </td>
+                <td>
+                    <div class="jelly">
+                        <img src="img/ee.png" alt="orange">
+                    </div>
+                    <div class="text-below">후르츠텔라</div>
+                    <div class="description">과일 요구르트 맛인 쫄깃한 젤리!</div>
+                </td>
+                <td>
+                    <div class="jelly">
+                        <img src="img/eee.png" alt="lemon">
+                    </div>
+                    <div class="text-below">짱시쥬</div>
+                    <div class="description">신 거 좋아한다면 추천! 새콤새콤~</div>
+                </td>
+            </tr>
+        </table>    
+    </div>
+</body>
+</html>
