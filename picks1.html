@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picks1</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        background-color: #fff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+    #logo {
+        text-align: center;
+        margin-top: 20px;
+    }
+    #logo img {
+        width: 100px;
+    }
+    nav {
+        margin-top: 30px;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    nav li {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+    main {
+        margin-left: 210px; 
+        padding: 20px;
+        width: calc(100% - 210px);
+    }
+    section {
+        height: 1300px;
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    #img {
+        width: 270px;
+        height: 620px;
+        text-align: center;
+    }
+    #img img {
+        width: 100%;
+        height: 100%;
+    }
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    #text {
+        width: 300px;
+        height: 620px;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 12px;
+        border: solid 1px rgb(179, 179, 179);
+    }
+    #text1 {
+        margin-top: 60px;
+    }
+    h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+    #bold {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    footer {
+            background-color: rgb(110, 110, 110);
+            color: rgb(225, 225, 225);
+            padding: 20px;
+            text-align: center;
+        }
+        #footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin: 5px 0;
+        }
+        footer img {
+            max-width: 50px;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            header {
+                width: 150px;
+            }
+            main {
+                margin-left: 160px;
+            }
+            section {
+                justify-content: space-between;
+            }
+            #img, #text {
+                width: 45%;
+            }
+            footer {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                width: 120px;
+            }
+            main {
+                margin-left: 130px;
+            }
+            nav li {
+                font-size: 12px;
+            }
+            section {
+                flex-direction: column;
+                align-items: center;
+            }
+            #img, #text {
+                width: 90%;
+                max-width: 300px;
+            }
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Lines1.html">lines</a></li>
+                <li><a href="picks1.html">picks</a></li>
+                <li><a href="parts1.html">parts</a></li>
+                <li><a href="wish1.html">wish</a></li>
+                <li><a href="note1.html">notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Beginner</h3>
+        <section>
+            <div id="img">
+                <img src="img/g110.jpg" alt="Product Image">
+            </div>
+            <div id="text">
+                <div id="text1">
+                <span id="bold">고퍼우드 G110</span>
+                <br><br>₩199,000
+                <br><br>어쿠스틱 기타
+                <br><br>유광 / 무광
+                <br> ______________________
+                <br><br>헤드 디자인 : 십자가 모양
+                <br>헤드 플레이트 장착
+                <br>브릿지 : 날렵한 모양
+                <br> 마감 : 유광과 무광 선택
+                <br><br> 합리적인 가격으로 브랜드 품질을 <br>
+                경험할 수 있는 고퍼우드 G110 모델.
+                <br><br> '마치 음식으로 표현하자면, 찰지게 올리브오일을 
+                <br>바른 밥을 유부초밥에 넣었는데 느끼하지 않으면서 
+                <br>밥이 잘 씹히는'
+
+                <br><br><br>
+                #입문자용 #고퍼우드기타 #가성비기타
+            </div>
+        </div>
+
+        <div id="img">
+            <img src="img/s.jpg" alt="Product Image">
+        </div>
+        <div id="text">
+            <div id="text1">
+            <span id="bold">Sigma 시그마 어쿠스틱기타 DM-RS</span>
+            <br><br>₩420,000
+            <br><br>어쿠스틱 기타
+            <br><br>무광
+            <br> ______________________
+            <br><br>사운드 극대화 : 도브테일 넥 조인트
+            <br>목재 : 솔리드 (SOLID)
+            <br>조합 : 솔리드 + 마호가니
+            <br> 바디 : 드레드넛
+            <br><br> 50년의 역사, 세계적인 브랜드 <br>
+            마틴의 역사와 함께 '가난한 자의 마틴'
+            <br><br> 바디가 클 수록 울림이 좋고 소리가 깊은 것이 특징이고,
+            <br> 바디가 작으면 소리 반응성이 좋아 한음한음 도드라지는
+            <br> 소리는 내는 것이 특징
+
+            <br><br><br>
+            #울림큰기타 #부드러운기타 #시그마기타
+        </div>
+    </div>
+        
+    <div id="img">
+        <img src="img/s2.jpg" alt="Product Image">
+    </div>
+    <div id="text">
+        <div id="text1">
+        <span id="bold">Swing S-2 SE</span>
+        <br><br>₩260,000
+        <br><br>일렉 기타
+        <br><br> pink I sunburst I black I white I blue I red
+        <br> ______________________
+        <br><br>헤드 디자인 : 스트랫 스타일
+        <br>목재 : 하드 메이플
+        <br>튜너 : Swing Diecast
+        <br> 넥 : 22Frets, 16 Radius
+        <br><br> 튜닝의 안저엉 및 연주의 편안함 제공 <br>
+        누구나 편안하게 연주가 가능
+        <br><br> 탄탄한 중음역대에서 받쳐주는 힘있는 사운드 
+        <br>깔끔한 외관과 맑은 클린톤, 범용적인 사운드 
+        <br>보급형 모델
+
+        <br><br><br>
+        #입문자용기타 #스윙일렉 #보급형일렉
+    </div>
+</div>
+
+<div id="img">
+    <img src="img/z.jpg" alt="Product Image">
+</div>
+<div id="text">
+    <div id="text1">
+    <span id="bold">XENON GP-3</span>
+    <br><br>₩268,000
+    <br><br>일렉 기타
+    <br><br>blue I black I sunburst I red
+    <br> ______________________
+    <br><br>바디 : 베이스 우드
+    <br>픽업 : 두 개의 싱글 픽업
+    <br>브릿지 : 6-point
+    <br> 핑거보드 : 로즈우드
+    <br><br> 가성비 일렉 <br>
+    편안함을 제공하는 제논 
+    <br><br> 섬세하고 견고한 디자인, 내구성이 좋은
+    <br> 유니크하고 세련된 이미지의 제논 일렉
+    <br> 세밀한 튜닝이 특징
+
+    <br><br><br>
+    #섬세한 #유니크한일렉 #풍부한울림
+</div>
+</section>
+        <footer>
+            <div id="footer-container">
+                <ul>
+                    <li>경기도 의왕시 계원대학로 33<br>계원예술대학교 디지털미디어디자인학과 24학번</li>
+                    <li><img src="img/logo.png" alt="Logo"></li>
+                    <li>hda4508@gmail.com<br>inst : @aanhinn</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
+

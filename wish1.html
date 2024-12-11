@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wish1</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        #logo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        #logo img {
+            width: 100px;
+        }
+        nav {
+            margin-top: 30px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+        main {
+            margin-left: 210px;
+            padding: 20px;
+        }
+        section, article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .img-box {
+            width: 300px;
+            height: 400px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid 2px rgb(210, 210, 210);
+        }
+        .img-box img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        footer {
+            background-color: rgb(110, 110, 110);
+            color: rgb(225, 225, 225);
+            padding: 20px;
+            text-align: center;
+        }
+        #footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin: 5px 0;
+        }
+        footer img {
+            max-width: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                width: 150px;
+            }
+            main {
+                margin-left: 160px;
+            }
+            section {
+                justify-content: space-between;
+            }
+            #img, #text {
+                width: 45%;
+            }
+            footer {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                width: 120px;
+            }
+            main {
+                margin-left: 130px;
+            }
+            nav li {
+                font-size: 12px;
+            }
+            section {
+                flex-direction: column;
+                align-items: center;
+            }
+            #img, #text {
+                width: 90%;
+                max-width: 300px;
+            }
+            footer {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                position: static;
+                width: 100%;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid red;
+            }
+            main {
+                margin: 0;
+            }
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            nav li {
+                font-size: 10px;
+                margin: 10px 0;
+            }
+            .img-box {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Lines1.html">lines</a></li>
+                <li><a href="picks1.html">picks</a></li>
+                <li><a href="parts1.html">parts</a></li>
+                <li><a href="wish1.html">wish</a></li>
+                <li><a href="note1.html">notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <a href="wish11.html"><div class="img-box"><img src="img/wish.jpg" alt="Image"></div></a>
+            <a href="wish14.html"><div class="img-box"><img src="img/w1.avif" alt="Image"></div></a>
+            <a href="wish15.html"><div class="img-box"><img src="img/w2.jpg" alt="Image"></div></a>
+        </section>
+        <article>
+            <a href="wish12.html"><div class="img-box"><img src="img/ba1.jpg" alt="Image"></div></a>
+            <a href="wish16.html"><div class="img-box"><img src="img/w11.jpg" alt="Image"></div></a>
+            <a href="wish13.html"><div class="img-box"><img src="img/222.jpg" alt="Image"></div></a>
+        </article>
+        <footer>
+            <div id="footer-container">
+                <ul>
+                    <li>경기도 의왕시 계원대학로 33<br>계원예술대학교 디지털미디어디자인학과 24학번</li>
+                    <li><img src="img/logo.png" alt="Logo"></li>
+                    <li>hda4508@gmail.com<br>inst : @aanhinn</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

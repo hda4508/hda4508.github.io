@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main1</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        #logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #logo img {
+            width: 100px;
+        }
+        nav {
+            margin-top: 30px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+        main {
+            margin-left: 210px;
+            padding: 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        section img {
+            width: 100%
+        }
+        p {
+            background-color: #fff;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 18px;
+        }
+        article {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        article li {
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            float: right;
+            list-style-type: none;
+            margin-right: 50px;
+        }
+        li img {
+            width: 200px;
+        }
+        footer {
+            background-color: rgb(110, 110, 110);
+            color: rgb(225, 225, 225);
+            padding: 20px;
+            text-align: center;
+        }
+        #footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin: 5px 0;
+        }
+        footer img {
+            max-width: 50px;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            header {
+                width: 150px;
+            }
+            main {
+                margin-left: 160px;
+            }
+            section {
+                justify-content: space-between;
+            }
+            #img, #text {
+                width: 45%;
+            }
+            footer {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                width: 120px;
+            }
+            main {
+                margin-left: 130px;
+            }
+            nav li {
+                font-size: 12px;
+            }
+            section {
+                flex-direction: column;
+                align-items: center;
+            }
+            #img, #text {
+                width: 90%;
+                max-width: 300px;
+            }
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="main1.html"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Lines1.html">lines</a></li>
+                <li><a href="picks1.html">picks</a></li>
+                <li><a href="parts1.html">parts</a></li>
+                <li><a href="wish1.html">wish</a></li>
+                <li><a href="note1.html">notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="img/guitar-47463_1280.png" alt="Main Image">
+        </section>
+        <p>
+            <marquee scrollamount=10>You just pick up a chord, go twang, and you've got music. (Sid Vicious)</marquee>
+        </p>
+        <article>
+            <ul>
+                <li><img src="img/main1.png"></li>
+                <li><img src="img/main2.png"></li>
+                <li><img src="img/main3.png"></li>
+            </ul>
+        </article>
+        <p>
+            
+            <marquee scrollamount="10" direction="right">Ah, music. A magic beyond all we do here! (J. K. Rowling)</marquee>
+        </p>
+        <footer>
+            <div id="footer-container">
+                <ul>
+                    <li>경기도 의왕시 계원대학로 33<br>계원예술대학교 디지털미디어디자인학과 24학번</li>
+                    <li><img src="img/logo.png" alt="Logo"></li>
+                    <li>hda4508@gmail.com<br>inst : @aanhinn</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

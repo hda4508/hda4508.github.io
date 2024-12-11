@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        #logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #logo img {
+            width: 100px;
+        }
+        nav {
+            margin-top: 30px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            margin: 20px 0;
+            font-size: 16px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+        main {
+            margin-left: 210px;
+            padding: 20px;
+            flex: 1;
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 20px;
+            padding: 10px;
+            background-color: #fff;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        #img {
+            width: 150px;
+            height: 190px;
+            text-align: center;
+        }
+        #img img {
+            width: 100%;
+            height: 100%;
+        }
+        article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        #text {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+        #text1 {
+            font-weight: bold;
+        }
+        footer {
+            background-color: rgb(110, 110, 110);
+            color: rgb(225, 225, 225);
+            padding: 20px;
+            text-align: center;
+        }
+        #footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin: 5px 0;
+        }
+        footer img {
+            max-width: 50px;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            header {
+                width: 150px;
+            }
+            main {
+                margin-left: 160px;
+            }
+            section {
+                justify-content: space-between;
+            }
+            #img, #text {
+                width: 45%;
+            }
+            footer {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                width: 120px;
+            }
+            main {
+                margin-left: 130px;
+            }
+            nav li {
+                font-size: 12px;
+            }
+            section {
+                flex-direction: column;
+                align-items: center;
+            }
+            #img, #text {
+                width: 90%;
+                max-width: 300px;
+            }
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Lines1.html">lines</a></li>
+                <li><a href="picks1.html">picks</a></li>
+                <li><a href="parts1.html">parts</a></li>
+                <li><a href="wish1.html">wish</a></li>
+                <li><a href="note1.html">notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Vital</h3>
+        <section>
+            <div id="img"><img src="img/1.jpg" alt="Product Image"></div>
+            <div id="img"><img src="img/2.jpeg" alt="Product Image"></div>
+            <div id="img"><img src="img/3.jpg" alt="Product Image"></div>
+            <div id="img"><img src="img/4.jpg" alt="Product Image"></div>
+            <div id="img"><img src="img/5.jpg" alt="Product Image"></div>
+            <div id="img"><img src="img/6.jpg" alt="Product Image"></div>
+            <article>
+                <div id="text"><span id="text1">Capo</span><br><br>음낮이 조절<br>쉬운 코드 옮김</div>
+                <div id="text"><span id="text1">튜닝기</span><br><br>음 맞춤</div>
+                <div id="text"><span id="text1">앰프</span><br><br>일렉 필수<br>앰프 선은 함께 구매</div>
+                <div id="text"><span id="text1">피크</span><br><br>일렉 혹은 스트로크 사용<br>두께 다양</div>
+                <div id="text"><span id="text1">제품명</span><br><br>기타 변형 방지<br>관리의 편리함</div>
+                <div id="text"><span id="text1">악기용 천</span><br><br>오염 방지<br>악기 최상의 관리</div>
+            </article>
+        </section>
+        <h3>Addition</h3>
+        <section>
+            <div id="img"><img src="img/11.jpg" alt="Product Image"></div>
+            <div id="img"><img src="img/22.png" alt="Product Image"></div>
+            <div id="img"><img src="img/33.png" alt="Product Image"></div>
+            <div id="img"><img src="img/44.jpg" alt="Product Image"></div>
+            <div id="img"><img src="img/55.jpg" alt="Product Image"></div>
+            <div id="img"><img src="img/66.jpg" alt="Product Image"></div>
+            <article>
+                <div id="text"><span id="text1">습도유지기</span> 
+                    <br><br>더 오래 사용이 가능</div>
+                <div id="text"><span id="text1">폴리쉬</span>
+                    <br><br>유지 기간 증가</div>
+                <div id="text"><span id="text1">보면대</span>
+                    <br><br>악보를 보는 용도
+                <br>편리함 증가</div>
+                <div id="text"><span id="text1">기타 발판</span>
+                    <br><br>편리함 증가</div>
+                <div id="text"><span id="text1">기타줄</span>
+                    <br><br>여분 구비
+                <br>끊어질 대비</div>
+                <div id="text"><span id="text1">이펙터</span>
+                    <br><br>기타 소리 다양화
+                <br>다양한 효과</div>
+            </article>
+        </section>
+        <footer>
+            <div id="footer-container">
+                <ul>
+                    <li>경기도 의왕시 계원대학로 33<br>계원예술대학교 디지털미디어디자인학과 24학번</li>
+                    <li><img src="img/logo.png" alt="Logo"></li>
+                    <li>hda4508@gmail.com<br>inst : @aanhinn</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
