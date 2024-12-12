@@ -5,170 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>note1</title>
     <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        display: flex;
-    }
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 200px;
-        background-color: #fff;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        padding: 10px;
-    }
-    #logo {
-        text-align: center;
-        margin-top: 20px;
-    }
-    #logo img {
-        width: 100px;
-    }
-    nav {
-        margin-top: 30px;
-    }
-    nav ul {
-        list-style: none;
-        padding: 0;
-    }
-    nav li {
-        margin: 20px 0;
-        font-size: 16px;
-    }
-    nav a {
-        text-decoration: none;
-        color: black;
-    }
-    main {
-        margin-left: 210px; 
-        padding: 20px;
-        width: calc(100% - 210px);
-    }
-    section {
-        height: 520px;
-        margin-bottom: 30px;
-        padding: 20px;
-        background-color: #fff;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 20px;
-    }
-    #img {
-        width: 240px;
-        height: 520px;
-        text-align: center;
-    }
-    #img img {
-        width: 100%;
-        height: 100%;
-    }
-    article {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 20px;
-        width: 100%;
-        margin-top: 20px;
-    }
-    #text {
-        width: 300px;
-        height: 520px;
-        text-align: center;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 12px;
-    }
-    #text1 {
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .video-space {
-        margin-top: 20px;
-        width: 300px;
-        max-width: 100%;;
-        text-align: center;
-        box-sizing: border-box;
-    }
-    .video-space video {
-        width: 100%;
-        height: auto;
-    }
-    footer {
-        background-color: rgb(110, 110, 110);
-        color: rgb(225, 225, 225);
-        padding: 20px;
-        text-align: center;
-        margin-top: 60px;
-    }
-    #footer-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        gap: 20px;
-    }
-    footer ul {
-        list-style: none;
-        padding: 0;
-    }
-    footer li {
-        margin: 5px 0;
-    }
-    footer img {
-        max-width: 50px;
-    }
-
- 
-    @media (max-width: 768px) {
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
         header {
-            width: 150px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
         }
-        main {
-            margin-left: 160px;
+        #logo {
+            text-align: center;
+            margin-top: 20px;
         }
-        section {
-            justify-content: space-between;
+        #logo img {
+            width: 100px;
         }
-        #img, #text {
-            width: 45%;
+        nav {
+            margin-top: 30px;
         }
-        .video-space {
-            width: 45%;
-        }
-        footer {
-            font-size: 14px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        header {
-            width: 120px;
-        }
-        main {
-            margin-left: 130px;
+        nav ul {
+            list-style: none;
+            padding: 0;
         }
         nav li {
-            font-size: 12px;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+        main {
+            margin-left: 210px;
+            flex: 1; 
+            padding: 20px;
         }
         section {
-            flex-direction: column;
-            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            gap: 20px;
+            margin-bottom: 30px;
         }
         #img, #text {
-            width: 90%;
+            flex: 1 1 calc(50% - 20px);
             max-width: 300px;
         }
-        .video-space {
-            width: 90%;
+        #img img {
+            width: 80%;
+            height: 80%;
         }
-        footer {
+        #text {
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
             font-size: 12px;
         }
-    }
+        #text1 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .video-space {
+            flex: 1 1 300px;
+            max-width: 300px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .video-space video {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: rgb(110, 110, 110);
+            color: rgb(225, 225, 225);
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+        #footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin: 5px 0;
+        }
+        footer img {
+            max-width: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                width: 150px;
+            }
+            main {
+                margin-left: 160px;
+            }
+            #img, #text, .video-space {
+                flex: 1 1 45%; /* 너비를 줄임 */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                width: 120px;
+            }
+            main {
+                margin-left: 130px;
+            }
+            nav li {
+                font-size: 12px;
+            }
+            section {
+                flex-direction: column; /* 요소를 세로로 배치 */
+                align-items: center;
+            }
+            #img, #text, .video-space {
+                flex: 1 1 90%; /* 화면에 꽉 차도록 조정 */
+            }
+        }
     </style>
 </head>
 <body>
@@ -204,7 +174,7 @@
         매번 기타 코드만 치는 것이 아닌 기타 솔로를 치면서 점차 늘어가는 실력에 뿌듯함을 느끼고 있다. 그와 동시에 욕심도 점점 많아지는 것 같다. 이전에는 기본만 쳐도 즐거웠지만
         지금은 더 어려운 솔로 파트를 완벽하게 해 내고 싶다! 하지만... 현재는 너무 바쁜 탓에 기타를 칠 수 없다는 게 ㅠㅠ</div>
         </section>
-        <article>
+        <section>
             <div class="video-space">
                 <video src="img/video1.mp4" controls></video>
             </div>
@@ -214,7 +184,7 @@
             <div class="video-space">
                 <video src="img/video3.mp4" controls></video>
             </div>
-        </article>
+        </section>
         <footer>
             <div id="footer-container">
                 <ul>
